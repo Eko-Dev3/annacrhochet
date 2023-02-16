@@ -5793,7 +5793,7 @@ p{
 .product-image{
     display:block;
     width:100%;
-    height:300px;
+    height:auto;
 }
 .product-imagecart{
     display:block;
@@ -9563,6 +9563,24 @@ button:focus{
 .sidebar-shop .custom-control-label::before{
     border-radius:0.2rem
 }
+/* sidebar movil */
+.toolbox-left-movil{
+    display: none;
+}
+.sidebarlg{
+    display: block;
+}
+@media only screen and (max-width: 768px){
+    .toolbox-left-movil{
+        display: block;
+    }
+    .sidebarlg{
+        display: none;
+    }
+    
+}
+
+/*  */
 .widget-clean{
     display:flex;
     align-items:center;
