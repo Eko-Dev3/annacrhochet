@@ -34,6 +34,11 @@
     <link rel="stylesheet" href="assets/css/skins/skin-demo-9.css">
     <link rel="stylesheet" href="assets/css/demos/demo-9.css">
     <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" src="https://cdn.jsdelivr.net/gh/cotton123236/zoomist@latest/dist/zoomist.min.css"/>
+            
+<script src="https://cdn.jsdelivr.net/gh/cotton123236/zoomist@latest/dist/zoomist.min.js"></script>
+    <!--  -->
     <!-- Importation CDN animate.min.css -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
@@ -333,7 +338,7 @@
                     </nav><!-- End .pager-nav -->
                 </div><!-- End .container -->
             </nav><!-- End .breadcrumb-nav -->
-
+            
             <div class="page-content">
                 <div class="container">
                     <div class="product-details-top">
@@ -342,7 +347,7 @@
                                 <div class="product-gallery">
                                     <figure class="product-main-image">
                                         <span class="product-label label-sale">Sale</span>
-                                        <img id="product-zoom" src="assets/images/products/single/masonry/1.jpg" data-zoom-image="assets/images/products/single/masonry/1-big.jpg" alt="product image">
+                                        <img id="product-zoom" id="my-zoomist" data-zoomist-src="./image.png" src="assets/images/products/single/masonry/1.jpg" data-zoom-image="assets/images/products/single/masonry/1-big.jpg" alt="product image">
 
                                         <a href="#" id="btn-product-gallery" class="btn-product-gallery">
                                             <i class="icon-arrows"></i>
@@ -351,15 +356,15 @@
 
                                     <div id="product-zoom-gallery" class="product-image-gallery product-gallery-masonry">
                                         <a class="product-gallery-item" href="#" data-image="assets/images/products/single/masonry/2.jpg" data-zoom-image="assets/images/products/single/masonry/2-big.jpg">
-                                            <img src="assets/images/products/single/masonry/2-small.jpg" alt="product cross">
+                                            <img data-fancybox="galeria" src="assets/images/products/single/masonry/2-small.jpg" alt="product cross">
                                         </a>
 
                                         <a class="product-gallery-item gallery-item-wide" href="#" data-image="assets/images/products/single/masonry/3.jpg" data-zoom-image="assets/images/products/single/masonry/3-big.jpg">
-                                            <img src="assets/images/products/single/masonry/3-small.jpg" alt="product with model">
+                                            <img data-fancybox="galeria" src="assets/images/products/single/masonry/3-small.jpg" alt="product with model">
                                         </a>
 
-                                        <a class="product-gallery-item" href="#" data-image="assets/images/products/single/masonry/4.jpg" data-zoom-image="assets/images/products/single/masonry/4-big.jpg">
-                                            <img src="assets/images/products/single/masonry/4-small.jpg" alt="product side">
+                                        <a data-fancybox="galeria" class="product-gallery-item" href="assets/images/products/single/masonry/4.jpg" data-zoom-image="assets/images/products/single/masonry/4-big.jpg">
+                                            <img  src="assets/images/products/single/masonry/4-small.jpg" alt="product side">
                                         </a>
                                     </div><!-- End .product-image-gallery -->
                                 </div><!-- End .product-gallery -->
@@ -1125,6 +1130,8 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/nouislider.min.js"></script>
     <!-- Main JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
     <script src="assets/js/main.js"></script>
     <script src="http://localhost/anna-croshete/acction.js"></script>
     <script>
